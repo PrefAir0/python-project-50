@@ -1,9 +1,10 @@
+from gendiff.parser import parse, get_format
 import json
 
 
 def read_file(filepath):
-    with open(filepath) as file:
-        return json.load(file)
+    with open(filepath) as f:
+        return f.read()
 
 
 def format_value(value):
@@ -20,8 +21,8 @@ def format_value(value):
 
 
 def generate_diff(filepath1, filepath2):
-    data1 = read_file(filepath1)
-    data2 = read_file(filepath2)
+    data1 = parse(read_file(filepath1), get_format(filepath1))
+    data2 = parse(read_file(filepath2), get_format(filepath2))
 
     keys = sorted(data1.keys() | data2.keys())
 
