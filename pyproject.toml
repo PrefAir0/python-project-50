@@ -1,3 +1,13 @@
+line-length = 80
+
+[lint.per-file-ignores]
+  # init modules can contain the local imports, logic, unused imports
+"__init__.py" = ["F401"]
+
+[lint]
+preview = true
+select = ["E", "F", "I", "C90"]
+
 [project]
 name = "hexlet-code"
 version = "0.1.0"
@@ -12,6 +22,7 @@ gendiff = "gendiff.scripts.gendiff:main"
 [dependency-groups]
 dev = [
     "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
     "ruff>=0.15.14",
 ]
 
@@ -23,12 +34,3 @@ build-backend = "hatchling.build"
 packages = ["gendiff"]
 
 
-line-length = 80
-
-[lint.per-file-ignores]
-  # init modules can contain the local imports, logic, unused imports
-"__init__.py" = ["F401"]
-
-[lint]
-preview = true
-select = ["E", "F", "I", "C90"]
