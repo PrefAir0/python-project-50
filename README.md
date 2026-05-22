@@ -5,5 +5,7 @@
 ![Python CI](https://github.com/PrefAir0/python-project-50/.github/workflows/pyci.yml)
 
 [![asciicast](https://asciinema.org/a/lZxkB9wV5TOoePp0.svg)](https://asciinema.org/a/lZxkB9wV5TOoePp0)
+
 [![asciicast](https://asciinema.org/a/3nu8Vp0O21gFtwY3.svg)](https://asciinema.org/a/3nu8Vp0O21gFtwY3)
+
 [![asciicast](https://asciinema.org/a/gaf24hz6VsORQUYZ.svg)](https://asciinema.org/a/gaf24hz6VsORQUYZ)
