@@ -12,5 +12,3 @@ def parse(content: str, format_name: str):
 
     if format_name in ("yaml", "yml"):
         return yaml.safe_load(content)
-
-    # raise ValueError(f"Unknown format: {format_name}")

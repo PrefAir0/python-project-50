@@ -1,5 +1,5 @@
 from gendiff.parser import parse, get_format
-from gendiff.formaters.stylish import format_stylish
+from gendiff.formaters import apply_format
 
 
 def read_file(filepath):
@@ -48,9 +48,7 @@ def build_diff(data1, data2):
 def generate_diff(filepath1, filepath2, format_name='stylish'):
     data1 = parse(read_file(filepath1), get_format(filepath1))
     data2 = parse(read_file(filepath2), get_format(filepath2))
+
     diff_tree = build_diff(data1, data2)
 
-    if format_name == 'stylish':
-        return format_stylish(diff_tree)
-
-    raise ValueError(f"Unknown format: {format_name}")
+    return apply_format(diff_tree, format_name)
