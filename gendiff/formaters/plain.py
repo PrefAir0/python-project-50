@@ -41,5 +41,5 @@ def walk(diff_tree, path=""):
     return lines
 
 
-def format_plain(diff_tree):
+def render(diff_tree):
     return '\n'.join(walk(diff_tree))

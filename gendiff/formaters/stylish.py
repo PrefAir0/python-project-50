@@ -56,5 +56,5 @@ def walk(diff_tree, depth):
     result = '\n'.join(lines)
     return f"{{\n{result}\n{bracket_indent}}}"
 
-def format_stylish(diff_tree):
+def render(diff_tree):
     return walk(diff_tree, 1)
