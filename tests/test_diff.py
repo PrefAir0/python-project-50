@@ -14,8 +14,11 @@ def read_file(filename):
     ('file1.json', 'file2.json', 'stylish', 'expected_stylish.txt'),
     ('file1.yaml', 'file2.yaml', 'stylish', 'expected_stylish.txt'),
     ('file1.json', 'file2.json', 'plain', 'expected_plain.txt'),
-    ('file1.yaml', 'file2.yaml', 'plain', 'expected_plain.txt')
+    ('file1.yaml', 'file2.yaml', 'plain', 'expected_plain.txt'),
+    ('file1.json', 'file2.json', 'json', 'expected_json.txt'),
+    ('file1.yaml', 'file2.yaml', 'json', 'expected_json.txt')
 ])
+
 def test_generate_diff(file1, file2, format_name, expected_file):
     filepath1 = get_fixture_path(file1)
     filepath2 = get_fixture_path(file2)

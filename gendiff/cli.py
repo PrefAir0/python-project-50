@@ -14,6 +14,7 @@ def parse_args():
         metavar='FORMAT',
         default='stylish',  
         help='set format of output',
+        choices=['stylish', 'plain', 'json']
     )
     return parser.parse_args()
 

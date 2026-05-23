@@ -1,8 +1,12 @@
-from gendiff.formaters.stylish import format_stylish
-from gendiff.formaters.plain import format_plain
+from gendiff.formaters import stylish
+from gendiff.formaters import plain
+from gendiff.formaters import json  
 
 def apply_format(diff_tree, format_name):
     if format_name == 'stylish':
-        return format_stylish(diff_tree)
+        return stylish.render(diff_tree)
     elif format_name == 'plain':
-        return format_plain(diff_tree)
+        return plain.render(diff_tree)
+    elif format_name == 'json':
+        return json.render(diff_tree)
+    
