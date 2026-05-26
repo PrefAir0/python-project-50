@@ -2,8 +2,6 @@
 [![Actions Status](https://github.com/IonChik/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/IonChik/python-project-49/actions)[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=PrefAir0_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=PrefAir0_python-project-50) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=PrefAir0_python-project-50&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=PrefAir0_python-project-50)
 
 
-[![Actions Status](https://github.com/PrefAir0/python-project-50/actions/workflows/build.yml/badge.svg)](https://github.com/PrefAir0/python-project-50/actions)
-
 ## **Gendiff**
 
 ### Функции программы:
