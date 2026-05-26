@@ -2,7 +2,6 @@ from pathlib import Path
 import json
 import yaml
 
-
 def get_format(file_path: str):
     return Path(file_path).suffix[1:]
 
