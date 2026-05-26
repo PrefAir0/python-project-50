@@ -1,6 +1,33 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/IonChik/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/IonChik/python-project-49/actions)[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=PrefAir0_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=PrefAir0_python-project-50) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=PrefAir0_python-project-50&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=PrefAir0_python-project-50)
 
+
+[![Actions Status](https://github.com/PrefAir0/python-project-50/actions/workflows/build.yml/badge.svg)](https://github.com/PrefAir0/python-project-50/actions)
+
+## **Gendiff**
+
+### Функции программы:
+
+* Для выбора формата вывода введите в консоль флаг `-f` / `--format`):
+  * `stylish` — структурированный, удобочитаемый текстовый вид (по умолчанию).
+  * `plain` — плоский список текстовых изменений (добавлено, удалено, изменено).
+  * `json` — вывод разницы в формате строгой JSON-строки для машинной обработки.
+
+---
+
+## Технологии и инструменты
+* Python >= 3.13
+* Менеджер пакетов и зависимостей: uv
+* Качество кода проверенно с помощью: ruff, SonarCloud
+---
+
+## Установка
+
+Установите пакетный менеджер uv
+Установите зависимости командой uv sync
+
+
+
 ![Python CI](https://github.com/PrefAir0/python-project-50/.github/workflows/pyci.yml)
 
 [![asciicast](https://asciinema.org/a/lZxkB9wV5TOoePp0.svg)](https://asciinema.org/a/lZxkB9wV5TOoePp0)
