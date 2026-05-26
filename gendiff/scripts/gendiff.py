@@ -1,4 +1,4 @@
-from gendiff.cli import main
+from gendiff.scripts.cli import main
 
 
 if __name__ == '__main__':

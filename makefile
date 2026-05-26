@@ -9,5 +9,9 @@ init:
 	uv run ruff check gendiff
 
 test:
-	run pytest
-	
+uv run pytest
+
+test-coverage:
+	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
+
+test-coverage — генерирует coverage.xml по модулю gendiff.
