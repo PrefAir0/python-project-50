@@ -1,4 +1,5 @@
 name: Build
+
 on:
   push:
     branches:
@@ -10,26 +11,25 @@ jobs:
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  
-
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12' 
+          python-version: '3.10'
       - name: Install uv
         uses: astral-sh/setup-uv@v5
       - name: Install dependencies
         run: |
           uv pip install --system -r pyproject.toml
           uv pip install --system pytest pytest-cov
-
       - name: Run tests and collect coverage
         run: |
+          rm -f coverage.xml
           uv run pytest --cov=page_analyzer --cov-report=xml
-
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v3
         env:
@@ -37,3 +37,4 @@ jobs:
         with:
           args: >
             -Dsonar.python.coverage.reportPaths=coverage.xml
+            -Dsonar.projectBaseDir=.

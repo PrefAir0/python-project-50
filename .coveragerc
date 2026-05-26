@@ -1,0 +1,9 @@
+[run]
+relative_files = True
+source = page_analyzer
+
+[report]
+omit =
+    tests/*
+    v destruction/*
+    .venv/*
